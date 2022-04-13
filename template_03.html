@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/template_03.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <title>template03</title>
+</head>
+<body>
+
+  <!-- 헤더시작 -->
+  <header id="header">
+    <div class="logo_wrap">
+      <img src="" alt="">
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="">이용안내</a></li>
+        <li><a href="">진료과/의료진안내</a></li>
+        <li><a href="">중점진료센터</a></li>
+        <li><a href="">비수술치료센터</a></li>
+        <li><a href="">종합검진센터</a></li>
+        <li><a href="">병원소개</a></li>
+      </ul>
+    </div>
+    <div class="signin_signup">
+      <a href="">로그인/회원가입</a>
+    </div>
+  </header>
+  <!-- 헤더 끝 -->
+  
+  <!-- 메인슬라이드 시작 -->
+  <section>
+    <div class="swiper main_slide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/1900x1000.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/1900x1000.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/1900x1000.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://via.placeholder.com/1900x1000.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <script>
+    var swiper = new Swiper(".main_slide", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop : true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- 메인슬라이드 끝 -->
+
+  <!-- 그리드 구간 시작 -->
+  <section class="section mt-100">
+    <div class="w-1400 flex_box grid_menu">
+      <div class="box01"></div>
+      <div class="box02">
+        <ul>
+          <li class="grid_box"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- 그리드 구간 끝 -->
+
+  <!-- 빠른이동메뉴 시작 -->
+  <section class="section quick_section">
+    <div class="w-1400">
+      <h2 class="section_title fz30 fw700">어디가 아프세요?</h2>
+      <div class="quick_menu_wrap">
+        <ul>
+          <li class="on">
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+          <li>
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p class="fz18 fw700">허리</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- 빠른이동메뉴 끝 -->
+
+  <!-- 세로탭 구간 시작 -->
+  <section class="section se03">
+    <div class="w-1400 flex_box">
+      <div class="section_title">
+        제목 
+      </div>
+      <div class="section_contents">
+        <div id="tabs" >
+          <ul class="tabmenu_wrap">
+            <li class="tabmenu">
+              <a href="#tabs-1">탭1</a>
+            </li>
+            <li class="tabmenu">
+              <a href="#tabs-2">탭2</a>
+            </li>
+            <li class="tabmenu">
+              <a href="#tabs-3">탭3</a>
+            </li>
+          </ul>
+          <div class="con_wrap">
+            <div id="tabs-1" class="tab_content">
+              <div class="img_wrap">
+                <img src="https://via.placeholder.com/650x480.png" alt="">
+              </div>
+            </div>
+            <div id="tabs-2" class="tab_content">
+              <p>내용2</p>
+            </div>
+            <div id="tabs-3" class="tab_content">
+              <p>내용3</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $( function() {
+      $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+      $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+    } );
+  </script>
+  <!-- 세로탭 구간 끝 -->
+
+  <!-- 의료진 슬라이드 시작 -->
+  <section class="section doc_slide">
+    <div class="w-1400">
+      <h1 class="text-c">의료진 소개</h1>
+      <p class="text-c">서브타이틀이 들어가거나 ~~ 어쩌구~~`</p>
+      <div class="swiper slide_02">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p><span class="text-c">정형외과</span> 김담하 대표원장</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p><span class="text-c">정형외과</span> 김담하 대표원장</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p><span class="text-c">정형외과</span> 김담하 대표원장</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p><span class="text-c">정형외과</span> 김담하 대표원장</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="img_wrap">
+              <img src="" alt="">
+            </div>
+            <p><span class="text-c">정형외과</span> 김담하 대표원장</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var swiper = new Swiper(".slide_02", {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      // centeredSlides: true,
+      loop : true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- 의료진 슬라이드 끝 -->
+
+  <!-- se07 시작 -->
+  <section class="section se07">
+    <div class="w-1400">
+      <div class="map"></div>
+      <div class="location"></div>
+    </div>
+  </section>
+  <!-- se07 끝 -->
+
+  <!-- se06 시작 -->
+  <section class="section se06">
+    <div class="w-1400">
+      <h1><span>담하의 최신 정보</span>를 알려드려요.</h1>
+      <div class="flex_box">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </section>
+  <!-- se06 끝 -->
+
+  <!-- se08 시작 -->
+  <section class="section se08">
+    <div class="w-1400">
+      <h1>담하 SNS</h1>
+      <div class="box">
+        <div class="banner naver">
+          <div class="img_wrap">
+            <img src="" alt="">
+          </div>
+          <p>담하블로그 바로가기</p>
+        </div>
+        <div class="banner insta">
+          <div class="img_wrap">
+            <img src="" alt="">
+          </div>
+          <p>담하인스타그램 바로가기</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- se08 끝 -->
+  
+
+  
+</body>
+</html>
